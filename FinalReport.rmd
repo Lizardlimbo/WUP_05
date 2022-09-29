@@ -55,6 +55,13 @@ Drug users treated with the vaccine are less likely to get AIDS.
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns, if any, that exist in the data as focused toward the research question!-->
+```{r}
+table1 <- xtabs(~infected + treatment, DrugUsers)
+rowPerc(table1)
+colPerc(table1)
+```
+
+$H_A$:The vaccine is effective on drug users
 
 ## Inferential Results
 
